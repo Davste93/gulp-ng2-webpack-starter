@@ -74,6 +74,7 @@ export class App {
   name = 'Angular 2 Webpack Starter';
   url = 'https://twitter.com/AngularClass';
 
+
   constructor(public appState: AppState) {}
 
   get state() {
