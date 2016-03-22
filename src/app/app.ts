@@ -75,9 +75,16 @@ export class App {
   url = 'https://twitter.com/AngularClass';
 
 
+
+
   constructor(public appState: AppState) {}
 
   get state() {
+    var  t: any = '1';
+    if (t === '1') {
+      console.log('Testing one two three four');
+    }
+
     return this.appState.get();
   }
 

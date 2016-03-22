@@ -18,9 +18,9 @@ var port_db = 8086;
 gulp.task('server', function(){
     //Webpackdev server builds so there's no need
     new WebpackDevServer(compiler, {
-      hot:true,
-      noInfo: false,
-      publicPath: cfg.webpack.output.publicPath
+
+      noInfo: true
+
     }).listen(port_server, "localhost", function(err) {
         if(err) throw new gutil.PluginError("webpack-dev-server", err);
         // Server listening
